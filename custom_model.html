@@ -1,0 +1,29 @@
+<!-- 
+Need to serve 3D model with CORS (cross-origin resource sharing)
+Otherwise model will be unable to load
+More info: https://aframe.io/docs/1.3.0/introduction/hosting-and-publishing.html#content-delivery-network-cdn 
+-->
+
+<!-- incomplete -->
+
+
+<!doctype HTML>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    </head>
+
+    <body style='margin : 0px; overflow: scroll;'>
+      <a-scene embedded arjs='sourceType: webcam;'> 
+        <!-- handle marker with your own pattern --> 
+        <a-marker type='pattern' url='static/pattern-images.patt'> 
+            <a-gltf-model src="static/naruto_run/scene.gltf" scale="1 1 1" position="0 0 0"></a-gltf-model>
+            <!-- <a-entity gltf-model-next=”static/naruto_run/scene.gltf”></a-entity> -->
+        </a-marker> 
+            <!-- add a simple camera --> 
+        <a-entity camera></a-entity> 
+    </a-scene>
+
+</html>
+
