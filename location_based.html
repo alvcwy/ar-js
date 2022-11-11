@@ -34,6 +34,8 @@
     </head>
     <body>
         <a-scene vr-mode-ui="enabled: false">
+            <a-text id="face" value="This content will always face you." look-at="[gps-camera]" scale="50 50 50" position="0 0 20"></a-text>
+
             <a-entity id="wrapper" position="0 -8 0">
 
                 <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
@@ -45,8 +47,6 @@
 
                 <a-text id="welcome" value="Welcome" scale="75 75 75" color="#000000" position="-30 0 -150"></a-text>
                 <!-- look-at="[gps-camera]" -->
-                <a-text id="face" value="This content will always face you." look-at="[gps-camera]" scale="50 50 50" position="0 0 20"></a-text>
-            
                 <a-camera gps-camera rotation-reader> </a-camera>
 
             </a-entity><!-- /wrapper -->
