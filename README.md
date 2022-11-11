@@ -12,7 +12,7 @@ Live at https://alvcwy.github.io/ar-js/
 ## TODO:
 - Some sort of onclick event for objects in AR
     - Play sound on click?
-- Turn debug mode off when deploying
+- Turn debug mode off when deploying and disable VR mode (a-scene, set attribute vr-mode-ui="enabled: false")
 
 - Loading custom models can crash browser and device on iPhone SE 2 (animated Naruto model size too large) (doesn't crash on Xiaomi Poco X3 Pro)
 
