@@ -14,7 +14,7 @@ Live at https://alvcwy.github.io/ar-js/
     - Play sound on click?
 - Turn debug mode off when deploying
 
-- Loading custom models crashes browser and device on iPhone (model size too large?) (see if it crashes on Android)
+- Loading custom models can crash browser and device on iPhone SE 2 (Naruto model size too large) (doesn't crash on Xiaomi Poco X3 Pro)
 
 
 ### Done:
