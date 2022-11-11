@@ -4,22 +4,24 @@ Code for setting up augmented reality (AR) using AR.js. Examples include using a
 
 Live at https://alvcwy.github.io/ar-js/
 
-### TODO:
-- Display custom model/image in AR
-- Use location-based instead of marker
-- Some sort of onclick event for objects in AR
-    - Play sound on click
-- Display text in AR (can use as instructions)
-
-### Done:
-- Use custom marker
-
-<br> </br>
-
 ### To run:
 - Locally: run with http-server
 - Online: host on Github Pages/Glitch (https://glitch.com/dashboard)
-- Turn off dark mode
+- Turn off dark mode to display camera
+
+## TODO:
+- Some sort of onclick event for objects in AR
+    - Play sound on click?
+
+
+### Done:
+- Use custom marker
+- Use custom model
+- Use custom animated model
+- Display image in AR (use a-image)
+- Display text in AR (can display instructions) (use a-text)
+- Use location-based AR
+
 
 ## Links
 ### Tutorial for markers:
@@ -37,3 +39,10 @@ Live at https://alvcwy.github.io/ar-js/
 
 ### Animating 3D models:
 - https://aframe.io/docs/1.3.0/components/gltf-model.html
+
+### Automatically updating AR to use current location:
+- https://stackoverflow.com/questions/60330263/ar-js-is-it-possible-to-update-the-location-of-a-gps-entity-place
+
+### Examples with A-Frame and AR.js:
+- https://github.com/inspiredlabs/ar.js/
+- Click on links for live demo
