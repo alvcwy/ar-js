@@ -8,10 +8,14 @@ Live at https://alvcwy.github.io/ar-js/
 - Locally: run with http-server
 - Online: host on Github Pages/Glitch (https://glitch.com/dashboard)
 - Turn off dark mode to display camera
+Tested on Macbook Pro/iPhone SE 2
 
 ## TODO:
 - Some sort of onclick event for objects in AR
     - Play sound on click?
+- Turn debug mode off when deploying
+
+- Loading custom models crashes browser and device on iPhone (see if it crashes on Android)
 
 
 ### Done:
@@ -42,6 +46,9 @@ Live at https://alvcwy.github.io/ar-js/
 
 ### Automatically updating AR to use current location:
 - https://stackoverflow.com/questions/60330263/ar-js-is-it-possible-to-update-the-location-of-a-gps-entity-place
+
+### Tutorial for location-based AR.js:
+- https://medium.com/swlh/build-your-location-based-augmented-reality-web-app-a841956eed2c 
 
 ### Examples with A-Frame and AR.js:
 - https://github.com/inspiredlabs/ar.js/
