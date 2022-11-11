@@ -34,8 +34,6 @@
     </head>
     <body>
         <a-scene vr-mode-ui="enabled: false">
-            <a-text id="face" value="This content will always face you." look-at="[gps-camera]" scale="50 50 50" position="0 0 20"></a-text>
-
             <a-entity id="wrapper" position="0 -8 0">
 
                 <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
@@ -43,7 +41,7 @@
                 <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
                 <a-plane position="0 0 -5.0" rotation="-90 0 0" width="7" height="7" color="#7BC8A4" shadow></a-plane>
 
-                <a-gltf-model src="https://cdn.jsdelivr.net/gh/alvcwy/ar-js@latest/static/articuno/scene.gltf" scale="0.2 0.2 0.2" position="20 0 0"></a-gltf-model>
+                <a-gltf-model src="https://cdn.jsdelivr.net/gh/alvcwy/ar-js@latest/static/articuno/scene.gltf" scale="0.2 0.2 0.2" position="40 0 -40"></a-gltf-model>
 
                 <a-text id="welcome" value="Welcome" scale="75 75 75" color="#000000" position="-30 0 -150"></a-text>
                 <!-- look-at="[gps-camera]" -->
@@ -51,7 +49,10 @@
 
             </a-entity><!-- /wrapper -->
 
-            <a-camera camera="fov: 60;" gps-camera rotation-reader></a-camera>
+            <a-camera camera="fov: 60;" gps-camera rotation-reader>
+                <!-- Fix text on screen, doesn't work if I put text in a-scene-->
+                <a-text id="face" value="Test" look-at="[gps-camera]" scale="50 50 50" position="0 0 20"></a-text>
+            </a-camera>
         </a-scene>
     </body>
 </html>
