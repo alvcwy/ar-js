@@ -8,14 +8,13 @@ Live at https://alvcwy.github.io/ar-js/
 - Locally: run with http-server
 - Online: host on Github Pages/Glitch (https://glitch.com/dashboard)
 - Turn off dark mode to display camera
-Tested on Macbook Pro/iPhone SE 2
 
 ## TODO:
 - Some sort of onclick event for objects in AR
     - Play sound on click?
 - Turn debug mode off when deploying
 
-- Loading custom models crashes browser and device on iPhone (see if it crashes on Android)
+- Loading custom models crashes browser and device on iPhone (model size too large?) (see if it crashes on Android)
 
 
 ### Done:
@@ -37,6 +36,9 @@ Tested on Macbook Pro/iPhone SE 2
 ### Downloading pre-made 3D models to display in AR:
 - https://sketchfab.com/
 
+### Preview GLTF models:
+- https://gltf-viewer.donmccurdy.com/
+
 ### Content delivery networks (CDN) to serve custom 3D models:
 - https://raw.githack.com/
 - https://www.jsdelivr.com/?docs=gh 
@@ -49,6 +51,7 @@ Tested on Macbook Pro/iPhone SE 2
 
 ### Tutorial for location-based AR.js:
 - https://medium.com/swlh/build-your-location-based-augmented-reality-web-app-a841956eed2c 
+- Repo: https://github.com/nicolocarpignoli/location-based-ar-tutorial/tree/master/static-places 
 
 ### Examples with A-Frame and AR.js:
 - https://github.com/inspiredlabs/ar.js/
